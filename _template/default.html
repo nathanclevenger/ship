@@ -15,7 +15,7 @@
   <meta itemprop="image" content="https://s3-us-west-1.amazonaws.com/tinify-bucket/prototypr/letter+(1).png">
 
   <!-- Facebook Meta Tags -->
-  <meta property="og:url" content="https://www.letter.so">
+  <meta property="og:url" content="https://{{ site.name | default: 'ship.page.as' }}">
   <meta property="og:type" content="website">
   <meta property="og:title" content="{{ site.title }}">
   <meta property="og:description" content="{{ site.description }}">
@@ -30,7 +30,7 @@
 </head>
 <body>
   
-  <iframe frameborder="0" src="https://www.producthunt.com/upcoming/{{ site.name }}" />
+  <iframe frameborder="0" src="https://www.producthunt.com/upcoming/{{ site.name | default: 'ship-page-as' }}" />
 
 </body>
 </html>
