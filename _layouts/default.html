@@ -27,10 +27,17 @@
   <meta name="twitter:description" content="{{ site.description }}">
   <meta name="twitter:image" content="{{ site.image | default: 'https://opengraph.githubassets.com/0b7b051d3a37b58ffe0b3c9abc1f8c179c0e698c70135a53186224ec1b1c7b56/nathanclevenger/ship' }}">
 
+  <style type="text/css">
+    body, html
+    {
+        margin: 0; padding: 0; height: 100%; overflow: hidden;
+    }
+  </style>
+  
 </head>
 <body>
   
-  <iframe frameborder="0" src="https://www.producthunt.com/upcoming/{{ site.name | default: 'ship-page-as' }}" />
+  <iframe width="100%" height="100%" src="https://www.producthunt.com/upcoming/{{ site.name | default: 'ship-page-as' }}" />
 
 </body>
 </html>
